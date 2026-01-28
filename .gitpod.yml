@@ -1,0 +1,20 @@
+# .gitpod.yml
+image: gitpod/workspace-full  # 基础镜像
+
+# 任务配置
+tasks:
+  - name: 启动开发服务器
+    init: echo '正在初始化环境...'
+    command: echo '环境就绪！'
+
+# 端口配置
+ports:
+  - port: 3000
+    onOpen: open-preview
+    description: 主应用端口
+
+# VS Code扩展
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - esbenp.prettier-vscode
