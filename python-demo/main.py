@@ -5,8 +5,7 @@ OpenSumi Python Demo - 主程序
 
 import sys
 import time
-import debugpy
-print(debugpy.__file__)
+
 from calculator import Calculator
 from utils import format_output, get_current_time
 
