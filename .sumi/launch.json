@@ -1,0 +1,40 @@
+
+### .sumi/launch.json
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: 运行主程序",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/autocode/python-demo/main.py",
+      "console": "integratedTerminal",
+      
+            "debugpyPath": "C:\Users\Think\AppData\Roaming\Python\Python310\Scripts\debugpy",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: 交互模式",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/main.py",
+      "args": ["--interactive"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: 运行测试",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/test_main.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: 调试当前文件",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

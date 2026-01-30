@@ -3,8 +3,8 @@
 """
 
 import unittest
-from src.calculator import Calculator
-from src.utils import create_greeting
+from calculator import Calculator
+from utils import create_greeting
 
 class TestCalculator(unittest.TestCase):
     """计算器测试类"""
