@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run App",
+      "request": "launch",
+      "mainClass": "com.example.App",
+      "projectName": "myapp"
+    },
+    {
+      "type": "java",
+      "name": "Debug App",
+      "request": "launch",
+      "mainClass": "com.example.App",
+      "stopOnEntry": true
+    }
+  ]
+}

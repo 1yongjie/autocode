@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "mkdir -p build && cd build && cmake .. && make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "rm -rf build bin"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "./bin/cpp_demo",
+            "dependsOn": ["build"]
+        }
+    ]
+}
